@@ -3,5 +3,24 @@
 
   &__input {
     flex: 1 1;
+    padding-left: 8px;
+    border: 1px solid $light-gray;
+    border-right-style: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: .2s ease border-color;
+    &:focus {
+      outline: none;
+      border-color: $main-color;
+    }
+  }
+
+  &__button {
+    background-color: $main-color;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }
