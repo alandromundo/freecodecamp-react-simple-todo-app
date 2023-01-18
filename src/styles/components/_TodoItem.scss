@@ -1,0 +1,25 @@
+.TodoItem {
+  display: grid;
+  grid-template-columns: 90% 1fr;
+  align-items: center;
+  padding: 8px;
+  background-color: $light-color;
+  color: $dark-color;
+  border-radius: 5px;
+  transition: .1s ease all;
+
+  &:hover {
+    background-color: $dark-color;
+    color: $white-color;
+    cursor: pointer;
+  }
+
+  &__delete-icon {
+    width: 24px;
+    height: 24px;
+    justify-self: center;
+    &:hover {
+      color: red;
+    }
+  }
+}
